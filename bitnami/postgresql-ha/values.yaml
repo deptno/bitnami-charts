@@ -478,7 +478,7 @@ postgresql:
   postgresPassword: ""
   ## @param postgresql.usePasswordFiles Set to `true` to mount PostgreSQL secret as a file instead of passing environment variable
   ##
-  usePasswordFiles: true 
+  usePasswordFiles: true
   ## @param postgresql.pgHbaTrustAll Configures PostgreSQL HBA to trust every user
   ##
   pgHbaTrustAll: false
@@ -2167,8 +2167,8 @@ backup:
   cronjob:
     ## @param backup.cronjob.schedule Set the cronjob parameter schedule
     schedule: "@daily"
-    ## @param backup.cronjob.timeZone Set the cronjob parameter timeZone
-    timeZone: ""
+    ## @param backup.cronjob.timezone Set the cronjob parameter timezone
+    timezone: ""
     ## @param backup.cronjob.concurrencyPolicy Set the cronjob parameter concurrencyPolicy
     concurrencyPolicy: Allow
     ## @param backup.cronjob.failedJobsHistoryLimit Set the cronjob parameter failedJobsHistoryLimit
